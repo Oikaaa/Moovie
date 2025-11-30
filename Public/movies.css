@@ -1,0 +1,19 @@
+.navigation{
+    top: 0px;
+}
+
+.movieHeader{
+    color: white;
+    font-size: 2.5em;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+.container{
+    padding: 50px;
+}
+
+.MovieDisplay{
+    display: flex;
+    flex-wrap: wrap;
+}

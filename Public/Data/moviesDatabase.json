@@ -114,8 +114,8 @@
     {
         "movieId": 9,
         "movieName": "12 Angry Men",
-        "moviePoster": "./images/12AngryMen.jpg",
-        "movieImg": "https://ihatedblackandwhitemovies.com/wp-content/uploads/2020/07/0_uh6otvvyy7ljq5f4.jpg?w=1000",
+        "moviePoster": "./images/12AngryMen.webp",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BNGRlZjVhNWMtOTUxYi00MTYxLWEzOWUtMTM1NDc3ZWRjMDZjXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg",
         "movieDes": "A jury of twelve men must deliberate the guilt or innocence of a defendant based on reasonable doubt, but tensions rise as they challenge each other\u2019s biases.",
         "movieRate": 8.9,
         "movieVideo": "https://www.primevideo.com/dp/amzn1.dv.gti.c8b6b788-95ee-1a10-9b93-672cd7835109?autoplay=0&ref_=atv_cf_strg_wb",
@@ -128,8 +128,8 @@
     {
         "movieId": 10,
         "movieName": "Schindler\u2019s List",
-        "moviePoster": "./images/SchindlersList.webp",
-        "movieImg": "https://m.media-amazon.com/images/M/MV5BMTc4NTA1OTE4Nl5BMl5BanBnXkFtZTcwODA2MDAxMw@@._V1_.jpg",
+        "moviePoster": "./images/SchindersList.png",
+        "movieImg": "https://th-thumbnailer.cdn-si-edu.com/HruoL_RVarsBoZTEaKd2rreDbRQ=/fit-in/1200x0/filters:focal(700x527:701x528)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ce/60/ce606b0a-bd71-43b3-84d6-08811e7828c7/schindlers.jpg",
         "movieDes": "Oskar Schindler, a German businessman, saves over a thousand Polish-Jewish refugees during the Holocaust by employing them in his factories.",
         "movieRate": 8.9,
         "movieVideo": "https://www.paramountplus.com/au/movies/video/SlZTBGufyjTPQBvt4QTEAeJvc0dkVdnC/",
@@ -212,8 +212,8 @@
     {
         "movieId": 16,
         "movieName": "The Prestige",
-        "moviePoster": "./images/ThePrestige.avif",
-        "movieImg": "https://images.bauerhosting.com/legacy/media/5f3a/9a7c/4074/8e75/1f49/07a9/prestige-1.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80",
+        "moviePoster": "./images/ThePrestige.png",
+        "movieImg": "https://images.bauerhosting.com/legacy/empire-tmdb/films/1124/images/c5o7FN2vzI7xlU6IF1y64mgcH9E.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80",
         "movieDes": "Two rival magicians engage in a dangerous competition that pushes the limits of science, obsession and sacrifice.",
         "movieRate": 8.5,
         "movieVideo": "https://www.sbs.com.au/ondemand/watch/2410196035523",
@@ -226,7 +226,7 @@
     {
         "movieId": 17,
         "movieName": "The Social Network",
-        "moviePoster": "./images/TheSocialNetwork.jpg",
+        "moviePoster": "./images/TheSocialNetwork.png",
         "movieImg": "https://static01.nyt.com/images/2020/10/05/arts/05social-network01/05social-network01-superJumbo-v3.jpg",
         "movieDes": "Mark Zuckerberg creates Facebook while facing legal battles and personal conflicts that reshape his life.",
         "movieRate": 7.8,
@@ -254,7 +254,7 @@
     {
         "movieId": 19,
         "movieName": "Her",
-        "moviePoster": "./images/Her.jpg",
+        "moviePoster": "./images/Her.png",
         "movieImg": "https://compote.slate.com/images/8b96dfb6-32d9-41c9-9b73-0adfb317d6a4.jpeg?crop=1560%2C1040%2Cx0%2Cy0",
         "movieDes": "A lonely writer forms a complex relationship with an AI operating system designed to meet his every need.",
         "movieRate": 8.0,
@@ -310,8 +310,8 @@
     {
         "movieId": 23,
         "movieName": "Whiplash",
-        "moviePoster": "./images/Whiplash.jpg",
-        "movieImg": "https://media.newyorker.com/photos/59097ccac14b3c606c109711/master/pass/Brody-Whiplash.jpg",
+        "moviePoster": "./images/Whiplash.png",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BMjM4MzA0MDE0M15BMl5BanBnXkFtZTgwNTQ1NTE4MjE@._V1_.jpg",
         "movieDes": "A young drummer faces extreme pressure from a ruthless instructor in pursuit of greatness.",
         "movieRate": 8.5,
         "movieVideo": "https://www.netflix.com/watch/70299275?source=35",
@@ -338,8 +338,8 @@
     {
         "movieId": 25,
         "movieName": "Gone Girl",
-        "moviePoster": "./images/GoneGirl.webp",
-        "movieImg": "https://statcdn.fandango.com/MPX/image/NBCU_Fandango/441/551/thumb_7C3141D6-E799-41F8-AE37-A2F63C288F32.jpg",
+        "moviePoster": "./images/GoneGirl.png",
+        "movieImg": "https://ychef.files.bbci.co.uk/624x351/p027pxn1.jpg",
         "movieDes": "A man becomes the center of a media frenzy when his wife mysteriously disappears.",
         "movieRate": 8.1,
         "movieVideo": "https://play.stan.com.au/programs/4190099",
@@ -366,8 +366,8 @@
     {
         "movieId": 27,
         "movieName": "Knives Out",
-        "moviePoster": "./images/KnivesOut.jpg",
-        "movieImg": "https://m.media-amazon.com/images/M/MV5BNTlmYjhlNDAtZTE2Ni00YTUyLWI1N2MtMjljMzdhODU1NzFiXkEyXkFqcGc@._V1_.jpg",
+        "moviePoster": "./images/KnivesOut.png",
+        "movieImg": "https://variety.com/wp-content/uploads/2019/07/knives-out.jpg",
         "movieDes": "A detective investigates the death of a wealthy author in a quirky family full of suspects.",
         "movieRate": 7.9,
         "movieVideo": "https://play.stan.com.au/programs/4223630",
@@ -390,5 +390,19 @@
         "yearPublished": 2016,
         "duration": "2h 8m",
         "movieCast": "Emma Stone, Ryan Gosling, J.K. Simmons, Rosemarie DeWitt, Finn Wittrock"
+    },
+    {
+        "movieId": 29,
+        "movieName": "Oppenheimer",
+        "moviePoster": "./images/Oppenheimer.png",
+        "movieImg": "./images/OppenheimerFaceShot.png",
+        "movieDes": "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Their work comes to fruition on July 16, 1945, as they witness the world`s first nuclear explosion, forever changing the course of history.",
+        "movieRate": 8.3,
+        "movieVideo": "https://www.netflix.com/au/title/81602830",
+        "movieGenres": "Biographical, Thriller, Epic, Drama, Heist, Adventure, History",
+        "movieTags": "History, Biographical",
+        "yearPublished": 2023,
+        "duration": "3h 0m",
+        "movieCast": "Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr., Florence Pugh, Josh Hartnett, Casey Affleck"
     }
 ]
