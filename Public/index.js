@@ -58,7 +58,7 @@ function addEventListenerToMovie (movie){
         movieDetail.classList.add('movieDetail')
         movieDetail.innerHTML = `
         <div class="detailContainer">
-            <div style="position: relative;">
+            <div style="position: relative"; class="ImgDiv";>
                 <img class="backgroundImgDetail" src="${currentMovie.movieImg}" alt="">
                 <div class="shadowImg"></div>
                 <div class="close" id="close"><p>X</p></div>
@@ -136,9 +136,11 @@ FetchingData("trending")
 const watchNowBtn = document.getElementById('watchNow')
 
 watchNowBtn.addEventListener('click', function(){
-    console.log("hi")
     window.open('https://www.netflix.com/au/title/81602830')
 })
+
+const DetailDisplaying = document.querySelector('.displayDetail')
+addEventListenerToMovie(DetailDisplaying)
 
 // Tag movie selection
 async function FetchingDataBaseOnGenre(movieGenre) {

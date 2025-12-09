@@ -37,7 +37,7 @@ function addEventListenerToMovie (movie){
         movieDetail.classList.add('movieDetail')
         movieDetail.innerHTML = `
         <div class="detailContainer">
-            <div style="position: relative;">
+            <div style="position: relative"; class="ImgDiv";>
                 <img class="backgroundImgDetail" src="${currentMovie.movieImg}" alt="">
                 <div class="shadowImg"></div>
                 <div class="close" id="close"><p>X</p></div>

@@ -12,6 +12,14 @@ CREATE TABLE movies_list(
     duration TEXT,
     movieCast TEXT
 );
+CREATE TABLE users_list(
+    userName TEXT NOT NULL,
+    userEmail TEXT NOT NULL,
+    userPassword TEXT NOT NULL,
+    userImg TEXT NOT NULL,
+    userWatchedList TEXT NOT NULL
+);
+
 DROP TABLE movies_list
 
 -- Add a collumn
@@ -21,49 +29,18 @@ ADD movieCast TEXT;
 -- movieId, movieName, moviePoster, movieImg, movieDes, movieRate, movieVideo, movieGenres, movieTags
 INSERT INTO movies_list (movieName, moviePoster, movieImg, movieDes, movieRate, movieVideo, movieGenres, movieTags, yearPublished, duration, movieCast)
 VALUES 
-('Oppenheimer',
- './images/Oppenheimer.png',
- './images/OppenheimerFaceShot',
- 'During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Their work comes to fruition on July 16, 1945, as they witness the world`s first nuclear explosion, forever changing the course of history.',
- 8.3,
- 'https://www.netflix.com/au/title/81602830',
- 'Biographical, Thriller, Epic, Drama, Heist, Adventure, History',
- 'History, Biographical',
- 2023,
- '3h 0m',
- 'Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr., Florence Pugh, Josh Hartnett, Casey Affleck');
+('Stranger Things', './images/StrangerThings.png', 'https://stories.uq.edu.au/contact-magazine/stranger-things/assets/jbFysrH0Ob/uq-contact-stranger-things-4096x2048.jpg', 'A group of kids uncover supernatural mysteries in the town of Hawkins.', 8.7, '', 'Sci-Fi, Mystery, Thriller', 'series, trendSeries', 2016, '4 Seasons', 'Millie Bobby Brown, Finn Wolfhard, David Harbour, Winona Ryder, Gaten Matarazzo'),
+('The Boys', './images/TheBoys.png', 'https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/07/karl-urban-as-butcher-and-jensen-ackles-as-soldier-boy-in-herogasm-from-the-boys-2.jpg?w=1600&h=900&fit=crop', 'A rebellious group battles corrupt superheroes controlled by a powerful corporation.', 8.7, '', 'Action, Dark Comedy, Superhero', 'series, trendSeries', 2019, '4 Seasons', 'Karl Urban, Jack Quaid, Antony Starr, Erin Moriarty, Chace Crawford'),
+('House of the Dragon', './images/HouseOfTheDragon.png', 'https://hips.hearstapps.com/hmg-prod/images/emma-d-arcy-1-691f53bb0a762.jpg?crop=1xw:0.7631535407015222xh;0,0.0543xh', 'Targaryen family battles for the Iron Throne centuries before the events of Game of Thrones.', 8.5, '', 'Fantasy, Drama, Action', 'series, trendSeries', 2022, '2 Seasons', 'Emma D’Arcy, Matt Smith, Olivia Cooke, Rhys Ifans, Paddy Considine'),
+('The Last of Us', './images/TheLastOfUs.png', 'https://www.hollywoodreporter.com/wp-content/uploads/2023/03/pedro-pascal-bella-ramsey_0-H-2023.jpg?w=1296&h=730&crop=1', 'A smuggler escorts a girl immune to a deadly fungal infection across post-apocalyptic America.', 8.8, '', 'Drama, Horror, Adventure', 'series, trendSeries', 2023, '1 Season', 'Pedro Pascal, Bella Ramsey, Gabriel Luna, Anna Torv, Merle Dandridge'),
+('Wednesday', './images/Wednesday.png', 'https://cdn.mos.cms.futurecdn.net/NCuLCkoQhw62ApoJxZk59R.jpg', 'Wednesday Addams joins Nevermore Academy and uncovers supernatural mysteries.', 8.1, '', 'Mystery, Comedy, Fantasy', 'series, trendSeries', 2022, '1 Season', 'Jenna Ortega, Emma Myers, Hunter Doohan, Catherine Zeta-Jones, Luis Guzmán'),
+('Squid Game', './images/SquidGame.png', 'https://www.hollywoodreporter.com/wp-content/uploads/2024/12/Squidgame_Unit_204_N064080.jpg?w=1296&h=730&crop=1', 'Hundreds compete in deadly children’s games for a massive cash prize.', 8.0, '', 'Thriller, Drama, Survival', 'series, trendSeries', 2021, '2 Seasons', 'Lee Jung-jae, Park Hae-soo, Jung Ho-yeon, Wi Ha-joon, Heo Sung-tae'),
+('Arcane', './images/Arcane.png', 'https://cdn.mos.cms.futurecdn.net/woMuuHPfBebVFAkQ7UCu7R.jpg', 'Two sisters fight on opposing sides of a conflict in the world of Piltover and Zaun.', 9.0, '', 'Fantasy, Action, Adventure', 'series, trendSeries', 2021, '1 Season', 'Hailee Steinfeld, Ella Purnell, Katie Leung, Kevin Alejandro, Harry Lloyd');
 
 -- Update an existing record
 UPDATE movies_list
-SET moviePoster = './images/SchindersList.png', movieImg = 'https://th-thumbnailer.cdn-si-edu.com/HruoL_RVarsBoZTEaKd2rreDbRQ=/fit-in/1200x0/filters:focal(700x527:701x528)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ce/60/ce606b0a-bd71-43b3-84d6-08811e7828c7/schindlers.jpg'
-WHERE movieId = 10; -- Which movie to update
-
-UPDATE movies_list
-SET moviePoster = './images/ThePrestige.png', movieImg = 'https://images.bauerhosting.com/legacy/empire-tmdb/films/1124/images/c5o7FN2vzI7xlU6IF1y64mgcH9E.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80'
-WHERE movieId = 16; -- Which movie to update
-
-UPDATE movies_list
-SET moviePoster = './images/TheSocialNetwork.png', movieImg = 'https://static01.nyt.com/images/2020/10/05/arts/05social-network01/05social-network01-superJumbo-v3.jpg'
-WHERE movieId = 17; -- Which movie to update
-
-UPDATE movies_list
-SET moviePoster = './images/Her.png', movieImg = 'https://compote.slate.com/images/8b96dfb6-32d9-41c9-9b73-0adfb317d6a4.jpeg?crop=1560%2C1040%2Cx0%2Cy0'
-WHERE movieId = 19; -- Which movie to update
-
-UPDATE movies_list
-SET moviePoster = './images/Whiplash.png', movieImg = 'https://m.media-amazon.com/images/M/MV5BMjM4MzA0MDE0M15BMl5BanBnXkFtZTgwNTQ1NTE4MjE@._V1_.jpg'
-WHERE movieId = 23; -- Which movie to update
-
-UPDATE movies_list
-SET moviePoster = './images/KnivesOut.png', movieImg = 'https://variety.com/wp-content/uploads/2019/07/knives-out.jpg'
-WHERE movieId = 27; -- Which movie to update
-
-UPDATE movies_list
-SET moviePoster = './images/GoneGirl.png', movieImg = 'https://ychef.files.bbci.co.uk/624x351/p027pxn1.jpg'
-WHERE movieId = 25; -- Which movie to update
-
-UPDATE movies_list
-SET moviePoster = './images/12AngryMen.webp', movieImg = 'https://m.media-amazon.com/images/M/MV5BNGRlZjVhNWMtOTUxYi00MTYxLWEzOWUtMTM1NDc3ZWRjMDZjXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg'
-WHERE movieId = 9; -- Which movie to update
+SET duration = '5 Seasons', movieVideo = 'https://www.netflix.com/au/title/80057281?source=35&fromWatch=true'
+WHERE movieId = 31; -- Which movie to update
 
 SELECT * FROM movies_list;
+SELECT * FROM users_list;
