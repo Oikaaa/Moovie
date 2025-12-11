@@ -51,7 +51,7 @@ body {
 
 .container > h1{
    font-weight: 100;
-   font-size: 30px; 
+   font-size: 1.865em; 
    cursor: default;
    margin: 5px 0px 10px 0px;
 }
@@ -59,7 +59,7 @@ body {
 .section > h3{
     margin: 5px 0px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.9em;
    cursor: default;
     width: auto;
 }
