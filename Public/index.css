@@ -30,6 +30,52 @@ body {
     font-size: 15px;
 }
 
+.user{
+    padding: 10px;
+    margin-right: 10px;
+}
+.user > img{
+    height: 35px;
+    border-radius: 1000px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.userDetail{
+    position: fixed;
+    right: 35px;
+    color: white;
+    top: 50px;
+    z-index: 1000;
+    width: fit-content;
+    height: fit-content;
+    background-color: #171717f0;
+}
+
+.userGreet{
+    font-weight: 200;
+    margin: 15px 10px 10px 10px;
+    font-size: 13px;
+    color: #afafaf;
+}
+
+.userDetailIUl{
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+}
+
+.userDetailLi{
+    padding: 10px 15px;
+    font-size: 13px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.userDetailLi:hover{
+    background-color: #000000;
+}
+
 .naviLi:hover{
 }
 
@@ -192,6 +238,7 @@ body {
     display: flex;
     height: 100%;
     justify-content: space-between;
+    gap: 1%;
     align-items: center;
 }
 
@@ -200,11 +247,11 @@ body {
     aspect-ratio: 2/3;
     border-radius: 10px;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .movie{
-    width: 11.59%;
-    transition: height 0.1s ease-out;
+    width: 250px;
     border-radius: 10px;
     box-shadow: 0px 0px 50px #141414;
 }
@@ -459,11 +506,12 @@ body {
 }
 
 .tagMovieDisplay{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+    column-gap: 80px;
+    row-gap: 75px;
 }
 
 .tagMovie{
-    width: 11.7287%;
-    margin: 1.215859%;
+    width: 250px;
 }

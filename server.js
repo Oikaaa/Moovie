@@ -46,6 +46,20 @@ app.get('/accessDatabase', (req, res)=>{
   })
 })
 
+// Get a specific user data from sql
+app.post('/userData', (req, res)=>{
+  const userId = req.body.message
+  //Connect to database
+  const db = new sqlite3.Database('./Database/database.db', sqlite3.OPEN_READWRITE,(err)=>{
+    if (err) return console.error(err.message)
+  })
+  //Find the specific user in SQL database
+  db.all(`SELECT * FROM users_list WHERE userId=${userId};`, [], (err, user)=>{
+    if (err) return console.error(err.message)
+      res.send(user[0])//server will return an aeeay, since each users have a unique id the array length will be 1
+  })
+})
+
 // Use node server.js to start server
 // Start the server
 app.listen(port, () =>

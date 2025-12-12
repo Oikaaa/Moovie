@@ -81,7 +81,7 @@ create.addEventListener('click', function createAccount(){
                 username: username.value,
                 email: email.value.replaceAll(' ',''),
                 password: password.value.replaceAll(' ',''),
-                avatar: "https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg",
+                avatar: "./images/DeafaultUserIcon.jpg",
                 watchList: '',
             };
 
@@ -92,7 +92,7 @@ create.addEventListener('click', function createAccount(){
             }).then(response => response)
             .then(result => {
                 console.log(result.status)
-                alert("Account Created")
+                window.location.href = './signIn.html'
             })
             .catch(err => console.log(err))
         }catch (err){

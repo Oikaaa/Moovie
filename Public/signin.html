@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./signin.css">
+    <link rel="stylesheet" href="./signIn.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./Icons/css/font-awesome.min.css">
@@ -12,38 +12,30 @@
 </head>
 <body>
     <div class="mainContainer">
+        <img src="./images/MoneyHeist.jpg" class="imggg" alt="">
         <div class="SignPage">
-            <div class="container">
-                <a href="./index.html">Home</a>
-                <h1>Welcome to <br><span style="font-weight: 800; font-size: 2.3em;">Moovie</span></h1>
-                <div class="section">
-                    <h3>Username</h3>
-                    <input type="text" autocomplete="off" name="" placeholder="Username" id="username">
-                    <p id="failUsername" style="display: none;">*Your username should be in between 3 to 20 letters.</p>
-                </div>
-                <div class="section">
-                    <h3>Email</h3>
-                    <input type="email" autocomplete="off" name="" placeholder="Your email" id="email">
-                    <p id="failEmail" style="display: none;">*Your email should includes either @email.com, @gmail.com or @yahoo.com</p>
-                </div>
-                <div class="section">
-                    <h3>Password</h3>
-                    <input type="password" name="" placeholder="Your password" id="password">
-                    <p id="failPass" style="display: none;">*Your password should be more than 5 characters.</p>
-                </div>
-                <div class="section">
-                    <h3>Confirm Password</h3>
-                    <input type="password" name="" placeholder="Confirm password" id="confirmPassword">
-                    <p id="failConPass" style="display: none;">*Your password does not match.</p>
-                </div>
-                <div class="btnDiv section">
-                    <button id="createBtn">CREATE</button>
-                </div>
+        <div class="container">
+            <a href="./index.html">Home</a>
+            <h1>Welcome back to <br><span class="Moovie">Moovie</span></h1>
+            <div class="section">
+                <h3>Email</h3>
+                <input type="email" autocomplete="off" name="" placeholder="Your email" id="email">
             </div>
+            <div class="section">
+                <h3>Password</h3>
+                <input type="password" name="" placeholder="Your password" id="password">
+                <p id="failCredential" style="display: none;">*Your login credentials are incorrect.</p>
+            </div>
+            <div class="btnDiv section">
+                <button id="signInBtn">Sign Up</button>
+            </div>
+            <p class=" text">Don't have an account? <a href="./signup.html">Sign Up</a></p>
         </div>
-        <img src="./images/SupermanImage.jpg" class="imggg" alt="">
     </div>
+    </div>
+    
+    
 
-    <script src="./SignUp.js"></script>
+    <script src="./signIn.js"></script>
 </body>
 </html>
