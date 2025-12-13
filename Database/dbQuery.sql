@@ -30,12 +30,11 @@ ADD movieCast TEXT;
 -- movieId, movieName, moviePoster, movieImg, movieDes, movieRate, movieVideo, movieGenres, movieTags
 INSERT INTO movies_list (movieName, moviePoster, movieImg, movieDes, movieRate, movieVideo, movieGenres, movieTags, yearPublished, duration, movieCast)
 VALUES 
-('Stranger Things', './images/StrangerThings.png', 'https://stories.uq.edu.au/contact-magazine/stranger-things/assets/jbFysrH0Ob/uq-contact-stranger-things-4096x2048.jpg', 'A group of kids uncover supernatural mysteries in the town of Hawkins.', 8.7, '', 'Sci-Fi, Mystery, Thriller', 'series, trendSeries', 2016, '4 Seasons', 'Millie Bobby Brown, Finn Wolfhard, David Harbour, Winona Ryder, Gaten Matarazzo');
-
+('Toy Story', './images/ToyStory.png', 'https://images.bauerhosting.com/legacy/empire-tmdb/films/862/images/dji4Fm0gCDVb9DQQMRvAI8YNnTz.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80', 'A group of toys come to life when humans are not around, led by a loyal cowboy doll.', 8.3, 'https://www.disneyplus.com/play/f6174ebf-cb92-453c-a52b-62bb3576e402?distributionPartner=google', 'Animation, Family, Comedy', 'kids, nostalgia', 1995, '81 min', 'Tom Hanks, Tim Allen, Don Rickles, Jim Varney, Annie Potts');
 -- Update an existing record
 UPDATE movies_list
-SET duration = '5 Seasons', movieVideo = 'https://www.netflix.com/au/title/80057281?source=35&fromWatch=true'
-WHERE movieId = 31; -- Which movie to update
+SET movieTags = 'series, western'
+WHERE movieId = 30; -- Which movie to update
 
 INSERT INTO users_list (userName, userEmail, userPassword,userImg,userWatchedList)
 VALUES

@@ -153,12 +153,13 @@ function my_rounding(n){
     }
 }
 
-async function movieDisplay() {
+async function movieDisplay(type) {
     const response = await fetch('./Data/moviesDatabase.json')
     const data = await response.json()
 
-    const series = data.filter((movie) => movie.movieTags.toLowerCase().includes("trendseries"))
-    const display = document.getElementById('display')
+    const series = data.filter((movie) => movie.movieTags.toLowerCase().includes(type))
+    console.log(series)
+    const display = document.getElementById(`${type}Display`)
     display.innerHTML = "" //Clear the container
 
     series.slice(0, 7).forEach(movie => {
@@ -175,4 +176,7 @@ async function movieDisplay() {
     });
 }
 
-movieDisplay()
+movieDisplay('trendseries')
+movieDisplay('western')
+movieDisplay('kdrama')
+movieDisplay('anime')
