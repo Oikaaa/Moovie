@@ -30,7 +30,7 @@ if (userId){
         userAvatar.addEventListener('mouseover', function(){
             userDetail.style.display = 'block'
         })
-        document.addEventListener('click', function(event){
+        document.addEventListener('click', function(){
             userDetail.style.display = 'none'
         })
 
@@ -185,7 +185,9 @@ function my_rounding(n){
 
 async function movieDisplay() {
     const response = await fetch('./Data/moviesDatabase.json')
-    const data = await response.json()
+    let data = await response.json()
+
+    data = data.filter(movie => movie.movieTags.toLowerCase().includes('series') == false) // Get rid of the TV shows type media
 
     const display = document.getElementById('display')
     display.innerHTML = "" //Clear the container

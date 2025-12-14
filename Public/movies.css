@@ -15,7 +15,7 @@
 
 .MovieDisplay{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
-    column-gap: 75px;
-    row-gap: 75px;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 2%;
+    row-gap: 2%;
 }
