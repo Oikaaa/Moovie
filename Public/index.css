@@ -235,11 +235,10 @@ body {
 }
 
 .TrendingMovies{
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    gap: 1%;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 2%;
+    row-gap: 75px;
 }
 
 .moviePoster{
@@ -251,7 +250,7 @@ body {
 }
 
 .movie{
-    width: 250px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 50px #141414;
 }
@@ -507,11 +506,50 @@ body {
 
 .tagMovieDisplay{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
-    column-gap: 80px;
-    row-gap: 75px;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 2%;
+    row-gap: 2%;
 }
 
 .tagMovie{
-    width: 250px;
+    width: 100%;
+}
+
+
+.watchingH{
+    width: 100%;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 200px 0px;
+    text-align: center;
+}
+
+.searchingDiv{
+    position: fixed;
+    top: 13px;
+    height: fit-content;
+    width: 100px;
+    z-index: 1000;
+    right: 420px;
+}
+
+.search{
+    cursor: pointer;
+}
+
+.searchEngine{
+    background-color: #171717ae;
+    border: rgb(143, 143, 143) solid 1px;
+    border-radius: 10px;
+    height: 30px;
+    outline: none;
+    width: 300px;
+    padding: 5px 10px;
+    color: white;
+    transition: border 0.5s;
+}
+
+.searchEngine:focus{
+    border: 1px rgb(255, 255, 255) solid;
 }

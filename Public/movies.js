@@ -11,7 +11,7 @@ if (userId){
         })
         const user = await res.json() 
         otherNaviUl.innerHTML = `
-            <li class="naviLi search"><i class="fa fa-search" aria-hidden="true"></i></li>
+            <li class="naviLi search"  id="searchBtn"><i class="fa fa-search" id="searchBtnIcon" aria-hidden="true"></i></li>
             <li class="naviLi notification"><i class="fa fa-bell" aria-hidden="true"></i></li>
             <li class="naviLi user"><img id="userAvatar" class="avatar" src="${user.userImg}"></li>
         `
@@ -42,6 +42,36 @@ if (userId){
 
         preference.addEventListener('click', function(){
             window.location.href = ''
+        })
+
+
+        // If user exist
+        const search = document.getElementById('searchingDiv')
+        const searchBtn = document.getElementById('searchBtn')
+        const searchBtnicon = document.getElementById('searchBtnIcon')
+        const searchEngine = document.getElementById('search')
+        let searchOn = false
+
+        searchBtn.addEventListener('click', function(){
+            if (searchOn){//Off
+                console.log(1)
+                searchOn = false
+                search.style.display = "none"
+                searchEngine.value = ''
+                sessionStorage.setItem('find', '') // reset data
+            }else{//On
+                console.log(1)
+                searchOn = true
+                search.style.display = "block"
+                sessionStorage.setItem('find', '') // reset data
+            }
+        })
+
+        searchEngine.addEventListener('keydown', function(key){
+            if (key.key == "Enter"){
+                sessionStorage.setItem('find', searchEngine.value)
+                window.location.href = "./result.html"
+            }
         })
     }
     GetUserData()
@@ -160,7 +190,7 @@ async function movieDisplay() {
     const display = document.getElementById('display')
     display.innerHTML = "" //Clear the container
 
-    data.slice(0,21).forEach(movie => {
+    data.forEach(movie => {
         const current_movie = document.createElement("div")
         current_movie.classList.add("movie")
         current_movie.classList.add("tagMovie")
@@ -175,3 +205,30 @@ async function movieDisplay() {
 }
 
 movieDisplay()
+
+// Searching
+const search = document.getElementById('searchingDiv')
+const searchBtn = document.getElementById('searchBtn')
+const searchBtnicon = document.getElementById('searchBtnIcon')
+const searchEngine = document.getElementById('search')
+let searchOn = false
+
+searchBtn.addEventListener('click', function(){
+    if (searchOn){//Off
+        searchOn = false
+        search.style.display = "none"
+        searchEngine.value = ''
+        sessionStorage.setItem('find', '') // reset data
+    }else{//On
+        searchOn = true
+        search.style.display = "block"
+        sessionStorage.setItem('find', '') // reset data
+    }
+})
+
+searchEngine.addEventListener('keydown', function(key){
+    if (key.key == "Enter"){
+        sessionStorage.setItem('find', searchEngine.value)
+        window.location.href = "./result.html"
+    }
+})

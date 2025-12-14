@@ -15,8 +15,8 @@
 
 .MovieDisplay{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
-    column-gap: 40px;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 2%;
     row-gap: 40px;
 }
 
@@ -27,7 +27,7 @@
 .pwHeader{
     color: white;
     margin: 10px 0px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     padding-left: 10px;
 }

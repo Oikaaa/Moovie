@@ -23,7 +23,7 @@
         </div>
         <div class="otherPart">
             <ul class="naviUl" id="otherNaviUl">
-                <li class="naviLi search"><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li class="naviLi search" id="searchBtn"><i class="fa fa-search"  id="searchBtnIcon"aria-hidden="true"></i></li>
                 <li class="naviLi notification"><i class="fa fa-bell" aria-hidden="true"></i></li>
                 <li class="naviLi"><a href="./signin.html">Log In</a></li>
             </ul>
@@ -31,6 +31,10 @@
     </div>
 
     <div style="display: none;" class="userDetail" id="userDetail">
+    </div>
+
+    <div style="display: none;" class="searchingDiv" id="searchingDiv">
+        <input autocomplete="off" type="text" id="search" placeholder="I'm looking for..." class="searchEngine">
     </div>
 
     <div class="displayingMovie">
@@ -77,9 +81,7 @@
         <div class="ContinueWatching">
             <h1 class="Continue SectionHeader">Continue Watching</h1>
             <div class="ContinueMovies" id="Continue">
-                <div class="movie">
-                    <img src="./images/LoadingImage.png" class="moviePoster" alt="">
-                </div>
+                <h1 class="watchingH">You don't have any watching movies:(</h1>
             </div>
 
             <div class="Browsing">
